@@ -308,26 +308,6 @@ Results include:
 - Enable early stopping to prevent overfitting
 
 
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## 📞 Support
-
-For questions and support:
-- Open an issue on GitHub
-- Check the documentation
-- Review the troubleshooting section
-
 ---
 
 **Note**: This framework is designed for research and educational purposes. For production use, additional validation and testing may be required.
