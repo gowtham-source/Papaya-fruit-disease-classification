@@ -1,0 +1,53 @@
+{
+    "model": {
+        "encoder_name": "resnet50",
+        "num_classes": 9,
+        "encoder_weights": "imagenet",
+        "aux_classifier": true
+    },
+    "data": {
+        "dataset_path": "c:/Users/gowth/Downloads/Sisfrutos-Papaya/papaya_models/data/segmentation/train",
+        "masks_path": "c:/Users/gowth/Downloads/Sisfrutos-Papaya/papaya_models/data/segmentation/train/masks",
+        "batch_size": 2,
+        "image_size": [256, 256],
+        "num_workers": 4,
+        "train_augmentations": true
+    },
+    "loss": {
+        "ce_weight": 1.0,
+        "dice_weight": 1.0,
+        "focal_weight": 0.5,
+        "tversky_weight": 0.5,
+        "boundary_weight": 0.3,
+        "aux_weight": 0.4,
+        "use_class_weights": true
+    },
+    "optimizer": {
+        "name": "adamw",
+        "lr": 1e-4,
+        "weight_decay": 1e-4,
+        "momentum": 0.9
+    },
+    "scheduler": {
+        "name": "cosine",
+        "step_size": 30,
+        "gamma": 0.1,
+        "factor": 0.5,
+        "patience": 10
+    },
+    "training": {
+        "num_epochs": 10,
+        "gradient_clip": 1.0,
+        "early_stopping_patience": 15
+    },
+    "logging": {
+        "log_interval": 10
+    },
+    "checkpoints_dir": "c:/Users/gowth/Downloads/Sisfrutos-Papaya/papaya_models/checkpoints/segmentation",
+    "log_dir": "c:/Users/gowth/Downloads/Sisfrutos-Papaya/papaya_models/logs/segmentation",
+    "results_dir": "c:/Users/gowth/Downloads/Sisfrutos-Papaya/papaya_models/results/segmentation",
+    "use_tensorboard": true,
+    "use_wandb": false,
+    "save_visualizations": true,
+    "experiment_name": "papaya_segmentation_9class"
+}

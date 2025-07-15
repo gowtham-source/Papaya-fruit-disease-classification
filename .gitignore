@@ -1,0 +1,37 @@
+# Ignore virtual environment
+.env
+.venv
+__pycache__
+
+# Ignore specific files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore specific directories
+__pycache__
+
+# Ignore specific files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore specific directories
+__pycache__
+
+segmentation_test
+
+papaya_models/data/train
+papaya_models/data/test
+papaya_models/data/validation
+papaya_models/data/segmentation
+
+papaya_models/logs/detection
+papaya_models/logs/segmentation
+
+utils/wandb_logging
+utils/aws
+utils/google_app_enginge
+
+papaya_models/checkpoints/segmentation
+weights/sam_vit_h.pth
